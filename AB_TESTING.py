@@ -19,8 +19,8 @@ pd.set_option('display.max_columns', None)
 pd.set_option('display.expand_frame_repr', False)
 pd.set_option('display.float_format', lambda x: '%.5f' % x)
 
-df_control = pd.read_excel("Case Study(AB Testing)/ab_testing.xlsx",sheet_name="Control Group")
-df_test = pd.read_excel("Case Study(AB Testing)/ab_testing.xlsx",sheet_name="Test Group")
+df_control = pd.read_excel("ab_testing.xlsx",sheet_name="Control Group")
+df_test = pd.read_excel("ab_testing.xlsx",sheet_name="Test Group")
 def check_df(dataframe, head=5):
     print("##################### Shape #####################")
     print(dataframe.shape)
